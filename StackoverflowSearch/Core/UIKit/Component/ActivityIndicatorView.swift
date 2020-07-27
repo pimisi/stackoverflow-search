@@ -31,7 +31,9 @@ class ActivityIndicatorView: UIView {
         animationView.animationSpeed = 1.0
         
         indicatorView.addSubview(animationView)
-        animationView.play()
+        DispatchQueue.main.async {
+            animationView.play()
+        }
         
         view.addSubview(indicatorView)
         view.isUserInteractionEnabled = false

@@ -63,6 +63,12 @@
 		0B5CE01024CF0C71008A0D45 /* Answers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5CE00F24CF0C71008A0D45 /* Answers.swift */; };
 		0B5CE01224CF0CD6008A0D45 /* AnswersClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5CE01124CF0CD6008A0D45 /* AnswersClient.swift */; };
 		0B5CE01424CF0D26008A0D45 /* AnswersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5CE01324CF0D26008A0D45 /* AnswersViewModel.swift */; };
+		0B5CE01724CF0E07008A0D45 /* AnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5CE01624CF0E07008A0D45 /* AnswerCell.swift */; };
+		0B5CE01924CF0E47008A0D45 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5CE01824CF0E47008A0D45 /* UIImageView+Extension.swift */; };
+		0B5CE01B24CF0E92008A0D45 /* QuestionDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5CE01A24CF0E92008A0D45 /* QuestionDetailCell.swift */; };
+		0B5CE01D24CF0ECB008A0D45 /* UISegmentedControl+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5CE01C24CF0ECB008A0D45 /* UISegmentedControl+Extension.swift */; };
+		0B5CE01F24CF0F1A008A0D45 /* UIIMage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5CE01E24CF0F1A008A0D45 /* UIIMage+Extension.swift */; };
+		0B5CE02124CF0FE6008A0D45 /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5CE02024CF0FE6008A0D45 /* TagView.swift */; };
 		86959D53267A4FD1DFB04C49 /* Pods_StackoverflowSearch_StackoverflowSearchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654D35B21A3910B5C2525D89 /* Pods_StackoverflowSearch_StackoverflowSearchUITests.framework */; };
 		EDC84645B0AA9B75CD9E4DBB /* Pods_StackoverflowSearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 798FE7C225F8662E4215E23D /* Pods_StackoverflowSearchTests.framework */; };
 /* End PBXBuildFile section */
@@ -146,6 +152,12 @@
 		0B5CE00F24CF0C71008A0D45 /* Answers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answers.swift; sourceTree = "<group>"; };
 		0B5CE01124CF0CD6008A0D45 /* AnswersClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswersClient.swift; sourceTree = "<group>"; };
 		0B5CE01324CF0D26008A0D45 /* AnswersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswersViewModel.swift; sourceTree = "<group>"; };
+		0B5CE01624CF0E07008A0D45 /* AnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCell.swift; sourceTree = "<group>"; };
+		0B5CE01824CF0E47008A0D45 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		0B5CE01A24CF0E92008A0D45 /* QuestionDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDetailCell.swift; sourceTree = "<group>"; };
+		0B5CE01C24CF0ECB008A0D45 /* UISegmentedControl+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+Extension.swift"; sourceTree = "<group>"; };
+		0B5CE01E24CF0F1A008A0D45 /* UIIMage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIIMage+Extension.swift"; sourceTree = "<group>"; };
+		0B5CE02024CF0FE6008A0D45 /* TagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
 		1FF653C7F5486B7A3E957761 /* Pods-StackoverflowSearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackoverflowSearchTests.debug.xcconfig"; path = "Target Support Files/Pods-StackoverflowSearchTests/Pods-StackoverflowSearchTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4FDEFB82FC17DA76737E0601 /* Pods-StackoverflowSearch-StackoverflowSearchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackoverflowSearch-StackoverflowSearchUITests.debug.xcconfig"; path = "Target Support Files/Pods-StackoverflowSearch-StackoverflowSearchUITests/Pods-StackoverflowSearch-StackoverflowSearchUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		654D35B21A3910B5C2525D89 /* Pods_StackoverflowSearch_StackoverflowSearchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StackoverflowSearch_StackoverflowSearchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -308,6 +320,9 @@
 				0B5CDF9824CEF403008A0D45 /* UIColor+Extension.swift */,
 				0B5CDF9A24CEF525008A0D45 /* UIView+Extension.swift */,
 				0B5CDFF924CF04FB008A0D45 /* UIAlertController+Extension.swift */,
+				0B5CE01824CF0E47008A0D45 /* UIImageView+Extension.swift */,
+				0B5CE01C24CF0ECB008A0D45 /* UISegmentedControl+Extension.swift */,
+				0B5CE01E24CF0F1A008A0D45 /* UIIMage+Extension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -493,6 +508,7 @@
 			isa = PBXGroup;
 			children = (
 				0B5CDFF124CF0303008A0D45 /* ActivityIndicatorView.swift */,
+				0B5CE02024CF0FE6008A0D45 /* TagView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -516,10 +532,10 @@
 		0B5CDFFB24CF0672008A0D45 /* Answers */ = {
 			isa = PBXGroup;
 			children = (
+				0B5CE02224CF119E008A0D45 /* Networking */,
 				0B5CE00C24CF0C1A008A0D45 /* ViewModel */,
 				0B5CE00B24CF0C0F008A0D45 /* Model */,
 				0B5CDFFC24CF067D008A0D45 /* View */,
-				0B5CE01124CF0CD6008A0D45 /* AnswersClient.swift */,
 			);
 			path = Answers;
 			sourceTree = "<group>";
@@ -527,6 +543,7 @@
 		0B5CDFFC24CF067D008A0D45 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0B5CE01524CF0DF1008A0D45 /* Component */,
 				0B5CDFFE24CF068C008A0D45 /* Storyboard */,
 				0B5CDFFD24CF0685008A0D45 /* Controller */,
 			);
@@ -564,6 +581,23 @@
 				0B5CE01324CF0D26008A0D45 /* AnswersViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0B5CE01524CF0DF1008A0D45 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				0B5CE01624CF0E07008A0D45 /* AnswerCell.swift */,
+				0B5CE01A24CF0E92008A0D45 /* QuestionDetailCell.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		0B5CE02224CF119E008A0D45 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				0B5CE01124CF0CD6008A0D45 /* AnswersClient.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		295C4FBC1AF4A76429B8E322 /* Frameworks */ = {
@@ -838,16 +872,21 @@
 				0B5CDFA124CEF97C008A0D45 /* SearchResult.swift in Sources */,
 				0B5CDFC024CEFCC2008A0D45 /* Message.swift in Sources */,
 				0B5CDFE024CF00AF008A0D45 /* Error+Extension.swift in Sources */,
+				0B5CE01D24CF0ECB008A0D45 /* UISegmentedControl+Extension.swift in Sources */,
 				0B5CDFD224CEFEA3008A0D45 /* Dictionary+Extension.swift in Sources */,
 				0B5CDFC724CEFD5E008A0D45 /* Alias.swift in Sources */,
+				0B5CE01924CF0E47008A0D45 /* UIImageView+Extension.swift in Sources */,
 				0B5CDFD424CEFED4008A0D45 /* String+Extension.swift in Sources */,
 				0B5CDFDC24CF005D008A0D45 /* Failure.swift in Sources */,
 				0B5CE00E24CF0C3B008A0D45 /* Answer.swift in Sources */,
 				0B5CDFEF24CF026F008A0D45 /* NetworkActivity.swift in Sources */,
 				0B47D3C224CEE8E0008CFE86 /* AppDelegate.swift in Sources */,
+				0B5CE02124CF0FE6008A0D45 /* TagView.swift in Sources */,
 				0B5CDFC524CEFD40008A0D45 /* APIClientDataProtocol.swift in Sources */,
+				0B5CE01B24CF0E92008A0D45 /* QuestionDetailCell.swift in Sources */,
 				0B5CE01424CF0D26008A0D45 /* AnswersViewModel.swift in Sources */,
 				0B5CDFCE24CEFE50008A0D45 /* URLRequest+Extension.swift in Sources */,
+				0B5CE01724CF0E07008A0D45 /* AnswerCell.swift in Sources */,
 				0B5CDFE724CF01E9008A0D45 /* SearchViewModel.swift in Sources */,
 				0B5CDFDA24CF0018008A0D45 /* SearchClient.swift in Sources */,
 				0B47D3C424CEE8E0008CFE86 /* SceneDelegate.swift in Sources */,
@@ -862,6 +901,7 @@
 				0B5CDFFA24CF04FB008A0D45 /* UIAlertController+Extension.swift in Sources */,
 				0B5CDFB724CEFB35008A0D45 /* Constant.swift in Sources */,
 				0B5CDFD724CEFF0F008A0D45 /* Dictionary+Overload.swift in Sources */,
+				0B5CE01F24CF0F1A008A0D45 /* UIIMage+Extension.swift in Sources */,
 				0B5CDFD024CEFE7A008A0D45 /* Data+Extension.swift in Sources */,
 				0B5CDFF824CF04D0008A0D45 /* ErrorCoordinator.swift in Sources */,
 				0B5CDFED24CF0251008A0D45 /* NetworkActivityAware.swift in Sources */,

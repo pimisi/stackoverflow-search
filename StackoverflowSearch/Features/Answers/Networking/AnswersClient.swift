@@ -46,8 +46,18 @@ class AnswersClient {
                 
         client.getData(from: path, urlParams: params, options: nil) { (data, error, response) in
             if response == nil || error != nil {
-                let reason = response != nil ? FailureReason(rawValue: response!.statusCode) : FailureReason(error: error)
-                return completion(.failure(Failure(error: reason)))
+                let reason: FailureReason?
+                var responseReason: FailureReason? = nil
+                
+                if let response = response {
+                    let statusCode = (error?.code == response.statusCode || error?.code == nil) ? response.statusCode : error?.code
+                    reason = FailureReason(rawValue: statusCode ?? 0)
+                    responseReason = FailureReason(rawValue: response.statusCode)
+                } else {
+                    reason = FailureReason(error: error)
+                }
+                
+                return completion(.failure(Failure(error: reason ?? responseReason, message: ((reason == .unknown || reason == nil) ? error?.localizedDescription : "") as AnyObject)))
             } else if let response = response {
                 guard response.statusCode == 200 else {
                     let reason = FailureReason(rawValue: response.statusCode)

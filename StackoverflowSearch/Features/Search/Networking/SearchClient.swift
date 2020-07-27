@@ -55,7 +55,7 @@ class SearchClient {
                     reason = FailureReason(error: error)
                 }
                 
-                return completion(Result.failure(Failure(error: reason ?? responseReason, message: ((reason == .unknown || reason == nil) ? error?.localizedDescription : "") as AnyObject)))
+                return completion(.failure(Failure(error: reason ?? responseReason, message: ((reason == .unknown || reason == nil) ? error?.localizedDescription : "") as AnyObject)))
             } else if let response = response {
                 guard response.statusCode == 200 else {
                     let reason = FailureReason(rawValue: response.statusCode)
