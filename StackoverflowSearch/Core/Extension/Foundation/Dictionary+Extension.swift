@@ -10,6 +10,14 @@ import Foundation
 
 extension Dictionary where Key == AnyHashable {
 
+    // MARK: - Setters
+    
+    mutating func set(value: Value?, for key: Key) {
+        self[key] = value
+    }
+    
+    // MARK: - Getters
+    
     func object(forKey key: String) -> Any? {
         if key.contains("|") {
             let parts = key.split(separator: "|").map { String($0).trimmed }
