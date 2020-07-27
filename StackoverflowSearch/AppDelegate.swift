@@ -14,7 +14,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
         configureNavigationBar()
+        configureSearchBar()
         
         return true
     }
@@ -46,6 +48,11 @@ extension AppDelegate {
         navigationBarAppearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.gray]
         navigationBarAppearance.barStyle = .default
         navigationBarAppearance.barTintColor = .white
+    }
+    
+    fileprivate func configureSearchBar() {
+        let searchBarAppearance = UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self])
+        searchBarAppearance.backgroundColor = .white
     }
 }
 
