@@ -14,6 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        configureNavigationBar()
+        
         return true
     }
     
@@ -33,6 +35,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 extension AppDelegate {
     static var rootViewController: UIViewController? {
         return UIApplication.shared.windows.first?.rootViewController
+    }
+}
+
+extension AppDelegate {
+    fileprivate func configureNavigationBar() {
+        let navigationBarAppearance = UINavigationBar.appearance()
+        
+        navigationBarAppearance.tintColor = .gray
+        navigationBarAppearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.gray]
+        navigationBarAppearance.barStyle = .default
+        navigationBarAppearance.barTintColor = .white
     }
 }
 
