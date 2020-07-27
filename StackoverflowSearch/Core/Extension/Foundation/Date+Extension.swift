@@ -14,4 +14,13 @@ extension Date {
         self = Date(timeIntervalSince1970: TimeInterval(timestamp))
     }
     
+    func asString(withFormat format: String) -> String {
+        let formatter = DateFormatter.baseFormatter
+        formatter.dateFormat = format
+        return formatter.string(from: self)
+    }
+    
+    var asString: String {
+        return self.asString(withFormat: "yyyy-MM-dd'T'HH:mm:ssZ")
+    }
 }

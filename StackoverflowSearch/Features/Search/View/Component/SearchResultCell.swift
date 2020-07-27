@@ -29,4 +29,17 @@ class SearchResultCell: UITableViewCell {
         titleLabel.textColor = UIColor.paleBlue
     }
     
+    func populate(with question: Question) {
+        titleLabel.text = "Q: \(question.title.stripHTMLTags)"
+        
+        bodyLabel.text = question.body.stripHTMLTags
+        isAnswerImageView.alpha = question.isAnswered ? 1 : 0
+        
+        answersLabel.text = "\(question.answerCount.shortenedStringFormatted) answer\(question.answerCount > 1 ? "s" : "")"
+        votesLabel.text = "\(question.votes.shortenedStringFormatted) vote\(question.votes > 1 ? "s" : "")"
+        viewsLabel.text = "\(question.viewCount.shortenedStringFormatted) view\(question.viewCount > 1 ? "s" : "")"
+        
+        footerLabel.attributedText = NSAttributedString.attributtedString(for: question.owner.displayName, prefix: "asked \(question.dateCreated.asString(withFormat: DateFormatter.shortDateFormat)) by ", valueColor: UIColor.paleBlue, prefixColor: UIColor.black, fontSize: 10.0)
+    }
+    
 }
