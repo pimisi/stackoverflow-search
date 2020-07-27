@@ -42,4 +42,5 @@ extension UIColor {
     }
     
     static let mainOrange: UIColor = from(hex: "#F18B00")
+    static let paleBlue: UIColor = from(hex: "#0095FF")
 }

@@ -17,6 +17,7 @@
 		0B5CDF9524CEEF07008A0D45 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5CDF9424CEEF07008A0D45 /* SearchViewController.swift */; };
 		0B5CDF9924CEF403008A0D45 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5CDF9824CEF403008A0D45 /* UIColor+Extension.swift */; };
 		0B5CDF9B24CEF525008A0D45 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5CDF9A24CEF525008A0D45 /* UIView+Extension.swift */; };
+		0B5CDF9E24CEF681008A0D45 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5CDF9D24CEF681008A0D45 /* SearchResultCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		0B5CDF9424CEEF07008A0D45 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		0B5CDF9824CEF403008A0D45 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		0B5CDF9A24CEF525008A0D45 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		0B5CDF9D24CEF681008A0D45 /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 		0B47D3F424CEEE33008CFE86 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0B5CDF9C24CEF645008A0D45 /* Component */,
 				0B47D3F524CEEE46008CFE86 /* Controller */,
 			);
 			path = View;
@@ -188,6 +191,14 @@
 				0B5CDF9A24CEF525008A0D45 /* UIView+Extension.swift */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		0B5CDF9C24CEF645008A0D45 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				0B5CDF9D24CEF681008A0D45 /* SearchResultCell.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,6 +336,7 @@
 				0B47D3C224CEE8E0008CFE86 /* AppDelegate.swift in Sources */,
 				0B47D3C424CEE8E0008CFE86 /* SceneDelegate.swift in Sources */,
 				0B5CDF9B24CEF525008A0D45 /* UIView+Extension.swift in Sources */,
+				0B5CDF9E24CEF681008A0D45 /* SearchResultCell.swift in Sources */,
 				0B5CDF9924CEF403008A0D45 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
