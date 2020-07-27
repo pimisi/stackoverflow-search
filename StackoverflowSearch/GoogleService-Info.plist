@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>934441811072-lulujfu5oogbf774tg0mlpnebsh77p86.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.934441811072-lulujfu5oogbf774tg0mlpnebsh77p86</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAyPsjW_gE0CjcHBTz0wLL5DWgDtdllA8c</string>
+	<key>GCM_SENDER_ID</key>
+	<string>934441811072</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>za.co.momentum.StackoverflowSearch</string>
+	<key>PROJECT_ID</key>
+	<string>osiris---stackoverflowsearch</string>
+	<key>STORAGE_BUCKET</key>
+	<string>osiris---stackoverflowsearch.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:934441811072:ios:8f7e8c23982820f5cdfa65</string>
+	<key>DATABASE_URL</key>
+	<string>https://osiris---stackoverflowsearch.firebaseio.com</string>
+</dict>
+</plist>

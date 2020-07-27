@@ -69,6 +69,7 @@
 		0B5CE01D24CF0ECB008A0D45 /* UISegmentedControl+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5CE01C24CF0ECB008A0D45 /* UISegmentedControl+Extension.swift */; };
 		0B5CE01F24CF0F1A008A0D45 /* UIIMage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5CE01E24CF0F1A008A0D45 /* UIIMage+Extension.swift */; };
 		0B5CE02124CF0FE6008A0D45 /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5CE02024CF0FE6008A0D45 /* TagView.swift */; };
+		0B81273F24CF193600CD11B0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B81273E24CF193600CD11B0 /* GoogleService-Info.plist */; };
 		86959D53267A4FD1DFB04C49 /* Pods_StackoverflowSearch_StackoverflowSearchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654D35B21A3910B5C2525D89 /* Pods_StackoverflowSearch_StackoverflowSearchUITests.framework */; };
 		EDC84645B0AA9B75CD9E4DBB /* Pods_StackoverflowSearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 798FE7C225F8662E4215E23D /* Pods_StackoverflowSearchTests.framework */; };
 /* End PBXBuildFile section */
@@ -158,6 +159,7 @@
 		0B5CE01C24CF0ECB008A0D45 /* UISegmentedControl+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+Extension.swift"; sourceTree = "<group>"; };
 		0B5CE01E24CF0F1A008A0D45 /* UIIMage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIIMage+Extension.swift"; sourceTree = "<group>"; };
 		0B5CE02024CF0FE6008A0D45 /* TagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
+		0B81273E24CF193600CD11B0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1FF653C7F5486B7A3E957761 /* Pods-StackoverflowSearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackoverflowSearchTests.debug.xcconfig"; path = "Target Support Files/Pods-StackoverflowSearchTests/Pods-StackoverflowSearchTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4FDEFB82FC17DA76737E0601 /* Pods-StackoverflowSearch-StackoverflowSearchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackoverflowSearch-StackoverflowSearchUITests.debug.xcconfig"; path = "Target Support Files/Pods-StackoverflowSearch-StackoverflowSearchUITests/Pods-StackoverflowSearch-StackoverflowSearchUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		654D35B21A3910B5C2525D89 /* Pods_StackoverflowSearch_StackoverflowSearchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StackoverflowSearch_StackoverflowSearchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -222,14 +224,15 @@
 		0B47D3C024CEE8E0008CFE86 /* StackoverflowSearch */ = {
 			isa = PBXGroup;
 			children = (
-				0B47D3F224CEEDD1008CFE86 /* Core */,
-				0B47D3F124CEEDC8008CFE86 /* Features */,
+				0B81273E24CF193600CD11B0 /* GoogleService-Info.plist */,
+				0B47D3CF24CEE8E1008CFE86 /* Info.plist */,
 				0B47D3C124CEE8E0008CFE86 /* AppDelegate.swift */,
 				0B47D3C324CEE8E0008CFE86 /* SceneDelegate.swift */,
-				0B47D3C724CEE8E0008CFE86 /* Main.storyboard */,
 				0B47D3CA24CEE8E1008CFE86 /* Assets.xcassets */,
+				0B47D3F224CEEDD1008CFE86 /* Core */,
+				0B47D3F124CEEDC8008CFE86 /* Features */,
 				0B47D3CC24CEE8E1008CFE86 /* LaunchScreen.storyboard */,
-				0B47D3CF24CEE8E1008CFE86 /* Info.plist */,
+				0B47D3C724CEE8E0008CFE86 /* Main.storyboard */,
 			);
 			path = StackoverflowSearch;
 			sourceTree = "<group>";
@@ -256,9 +259,9 @@
 			isa = PBXGroup;
 			children = (
 				0B5CDFFB24CF0672008A0D45 /* Answers */,
-				0B5CDFA624CEF9EE008A0D45 /* User */,
 				0B5CDFA224CEF9B1008A0D45 /* Question */,
 				0B47D3F324CEEE1F008CFE86 /* Search */,
+				0B5CDFA624CEF9EE008A0D45 /* User */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -266,13 +269,13 @@
 		0B47D3F224CEEDD1008CFE86 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				0B5CDFEA24CF0230008A0D45 /* UIKit */,
+				0B5CDFB424CEFB0E008A0D45 /* Constant */,
+				0B5CDF9624CEF3DE008A0D45 /* Extension */,
+				0B5CDFAD24CEFA9C008A0D45 /* Networking */,
 				0B5CDFD524CEFEFE008A0D45 /* Overload */,
 				0B5CDFC824CEFDB8008A0D45 /* Type */,
+				0B5CDFEA24CF0230008A0D45 /* UIKit */,
 				0B5CDFBA24CEFBF0008A0D45 /* Utilities */,
-				0B5CDFB424CEFB0E008A0D45 /* Constant */,
-				0B5CDFAD24CEFA9C008A0D45 /* Networking */,
-				0B5CDF9624CEF3DE008A0D45 /* Extension */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -280,10 +283,10 @@
 		0B47D3F324CEEE1F008CFE86 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				0B5CDFE524CF01D2008A0D45 /* ViewModel */,
-				0B5CDFD824CF0007008A0D45 /* Networking */,
 				0B5CDF9F24CEF953008A0D45 /* Model */,
+				0B5CDFD824CF0007008A0D45 /* Networking */,
 				0B47D3F424CEEE33008CFE86 /* View */,
+				0B5CDFE524CF01D2008A0D45 /* ViewModel */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -317,12 +320,12 @@
 		0B5CDF9724CEF3EE008A0D45 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				0B5CDF9824CEF403008A0D45 /* UIColor+Extension.swift */,
-				0B5CDF9A24CEF525008A0D45 /* UIView+Extension.swift */,
 				0B5CDFF924CF04FB008A0D45 /* UIAlertController+Extension.swift */,
+				0B5CDF9824CEF403008A0D45 /* UIColor+Extension.swift */,
+				0B5CE01E24CF0F1A008A0D45 /* UIIMage+Extension.swift */,
 				0B5CE01824CF0E47008A0D45 /* UIImageView+Extension.swift */,
 				0B5CE01C24CF0ECB008A0D45 /* UISegmentedControl+Extension.swift */,
-				0B5CE01E24CF0F1A008A0D45 /* UIIMage+Extension.swift */,
+				0B5CDF9A24CEF525008A0D45 /* UIView+Extension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -378,16 +381,16 @@
 		0B5CDFAA24CEFA2A008A0D45 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				0B5CDFAB24CEFA38008A0D45 /* Date+Extension.swift */,
-				0B5CDFCB24CEFE1B008A0D45 /* URLSessionConfiguration+Extension.swift */,
-				0B5CDFCD24CEFE50008A0D45 /* URLRequest+Extension.swift */,
 				0B5CDFCF24CEFE7A008A0D45 /* Data+Extension.swift */,
+				0B5CDFAB24CEFA38008A0D45 /* Date+Extension.swift */,
+				0B5CE00924CF09A5008A0D45 /* DateFormatter+Extension.swift */,
 				0B5CDFD124CEFEA3008A0D45 /* Dictionary+Extension.swift */,
-				0B5CDFD324CEFED4008A0D45 /* String+Extension.swift */,
 				0B5CDFDF24CF00AF008A0D45 /* Error+Extension.swift */,
 				0B5CE00524CF090F008A0D45 /* Int+Extension.swift */,
 				0B5CE00724CF0951008A0D45 /* NSAttributedString+Extension.swift */,
-				0B5CE00924CF09A5008A0D45 /* DateFormatter+Extension.swift */,
+				0B5CDFD324CEFED4008A0D45 /* String+Extension.swift */,
+				0B5CDFCD24CEFE50008A0D45 /* URLRequest+Extension.swift */,
+				0B5CDFCB24CEFE1B008A0D45 /* URLSessionConfiguration+Extension.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -395,9 +398,9 @@
 		0B5CDFAD24CEFA9C008A0D45 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				0B5CDFB124CEFADB008A0D45 /* Type */,
-				0B5CDFAE24CEFAAA008A0D45 /* Protocol */,
 				0B5CDFC924CEFDDB008A0D45 /* APIClient.swift */,
+				0B5CDFAE24CEFAAA008A0D45 /* Protocol */,
+				0B5CDFB124CEFADB008A0D45 /* Type */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -428,8 +431,8 @@
 			children = (
 				0B5CDFB524CEFB1D008A0D45 /* API */,
 				0B5CDFB624CEFB35008A0D45 /* Constant.swift */,
-				0B5CDFBD24CEFC91008A0D45 /* UIMessage.swift */,
 				0B5CDFBF24CEFCC2008A0D45 /* Message.swift */,
+				0B5CDFBD24CEFC91008A0D45 /* UIMessage.swift */,
 			);
 			path = Constant;
 			sourceTree = "<group>";
@@ -532,10 +535,10 @@
 		0B5CDFFB24CF0672008A0D45 /* Answers */ = {
 			isa = PBXGroup;
 			children = (
-				0B5CE02224CF119E008A0D45 /* Networking */,
-				0B5CE00C24CF0C1A008A0D45 /* ViewModel */,
 				0B5CE00B24CF0C0F008A0D45 /* Model */,
+				0B5CE02224CF119E008A0D45 /* Networking */,
 				0B5CDFFC24CF067D008A0D45 /* View */,
+				0B5CE00C24CF0C1A008A0D45 /* ViewModel */,
 			);
 			path = Answers;
 			sourceTree = "<group>";
@@ -737,6 +740,7 @@
 				0B5CDFF524CF041F008A0D45 /* StackoverflowSearchLoader.json in Resources */,
 				0B47D3CB24CEE8E1008CFE86 /* Assets.xcassets in Resources */,
 				0B47D3C924CEE8E0008CFE86 /* Main.storyboard in Resources */,
+				0B81273F24CF193600CD11B0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1092,7 +1096,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E46UK4CQ55;
+				DEVELOPMENT_TEAM = 6V63C69JJF;
 				INFOPLIST_FILE = StackoverflowSearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1111,7 +1115,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E46UK4CQ55;
+				DEVELOPMENT_TEAM = 6V63C69JJF;
 				INFOPLIST_FILE = StackoverflowSearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

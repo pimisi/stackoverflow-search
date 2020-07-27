@@ -31,15 +31,16 @@ class ActivityIndicatorView: UIView {
         animationView.animationSpeed = 1.0
         
         indicatorView.addSubview(animationView)
-        DispatchQueue.main.async {
-            animationView.play()
-        }
         
         view.addSubview(indicatorView)
         view.isUserInteractionEnabled = false
         
         indicatorView.backgroundColor = .white
         indicatorView.alpha = 0.9
+        
+        DispatchQueue.main.async {
+            animationView.play()
+        }
         
         return indicatorView
     }
@@ -58,8 +59,8 @@ class ActivityIndicatorView: UIView {
             DispatchQueue.main.async {
                 self.animationView.stop()
                 self.removeFromSuperview()
-                stopped?()
             }
+            stopped?()
         }
     }
 }

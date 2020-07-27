@@ -39,7 +39,7 @@ class QuestionDetailCell: UITableViewCell {
         profileImageView.clipsToBounds = true
     }
     
-    func populate(with question: Question, sortingOn sorting: Int? = nil) {
+    func populateInBackground(with question: Question, sortingOn sorting: Int? = nil) {
         titleLabel.text = question.title.stripHTMLTags
         askedLabel.attributedText = nil
         answersCountLabel.text = "\(question.answerCount.shortenedStringFormatted) Answer\(question.answerCount > 1 ? "s" : "")"
@@ -68,6 +68,13 @@ class QuestionDetailCell: UITableViewCell {
         filterSegmentControl.selectedSegmentIndex = sorting ?? 2
         
         configureTags(from: question)
+    }
+    
+    func populate(with question: Question, sortingOn sorting: Int? = nil) {
+        DispatchQueue.main.async {
+            self.populateInBackground(with: question, sortingOn: sorting)
+        }
+        
     }
     
     fileprivate func askedBy(_ question: Question) {
